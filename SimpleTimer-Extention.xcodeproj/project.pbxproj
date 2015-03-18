@@ -859,6 +859,7 @@
 				9D2688661AB7D76E008B88B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2688681AB7D76E008B88B9 /* Build configuration list for PBXNativeTarget "TonnyTimerKitTests" */ = {
 			isa = XCConfigurationList;
@@ -867,6 +868,7 @@
 				9D26886A1AB7D76E008B88B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DBBA2191AB7C87000F00BA7 /* Build configuration list for PBXNativeTarget "TonnyTimer" */ = {
 			isa = XCConfigurationList;
