@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SimpleTimer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>TonnyTimer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TonnyTimerKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9D26884A1AB7D76D008B88B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D2688541AB7D76D008B88B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DBBA2081AB7C86F00F00BA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D127E23B198B34FC00A09E62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D127E24D198B34FC00A09E62</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
