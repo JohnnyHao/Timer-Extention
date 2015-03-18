@@ -8,6 +8,7 @@
 
 import UIKit
 import TonnyTimerKit
+import NotificationCenter
 
 
 private let kSharedGroupIndentifier = "group.iWatchResearch"
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
             .addObserver(self, selector: "applicationWillResignActive",name: UIApplicationWillResignActiveNotification, object: nil)
         
         NSNotificationCenter.defaultCenter()
-            .addObserver(self, selector: "applicationWillResignActive",name: kTimerExtentionFinishedNotification, object: nil)
+            .addObserver(self, selector: "extentionTimerFinished",name: kTimerExtentionFinishedNotification, object: nil)
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -47,6 +48,11 @@ class ViewController: UIViewController {
                 clearDefaults()
             }
         }
+    }
+    
+    @objc private func extentionTimerFinished(){
+        println("the TonnyTimer extention timer finished")
+        hideTonnyTimerExtention()
     }
     
     
@@ -113,6 +119,21 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+
+    //Hide the extention in Today Page
+    func showTonnyTimerExtention() {
+      var widegCtl = NCWidgetController.widgetController() as NCWidgetController
+       widegCtl.setHasContent(true,  forWidgetWithBundleIdentifier:"com.tonny.research.com.SimpleTimer.TonnyTimer")
+    }
+    
+    
+    // Show the extention in Today Page
+    func hideTonnyTimerExtention(){
+        var widegCtl = NCWidgetController.widgetController() as NCWidgetController
+        widegCtl.setHasContent(false,  forWidgetWithBundleIdentifier:"com.tonny.research.com.SimpleTimer.TonnyTimer")
+    }
+    
 
 }
 

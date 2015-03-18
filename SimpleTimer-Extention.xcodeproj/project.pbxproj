@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2047CA1AB9260B001A27E0 /* Images.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
+		9D2047CB1AB92624001A27E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
+		9D2047D51AB92C61001A27E0 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2047D41AB92C61001A27E0 /* ActionViewController.swift */; };
+		9D2047D71AB92C61001A27E0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2047D61AB92C61001A27E0 /* MainInterface.storyboard */; };
+		9D2047DA1AB92C61001A27E0 /* TonnyAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D2047D01AB92C61001A27E0 /* TonnyAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9D2688501AB7D76D008B88B9 /* TonnyTimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D26884F1AB7D76D008B88B9 /* TonnyTimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D2688561AB7D76D008B88B9 /* TonnyTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D26884B1AB7D76D008B88B9 /* TonnyTimerKit.framework */; };
 		9D26885F1AB7D76D008B88B9 /* TonnyTimerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26885E1AB7D76D008B88B9 /* TonnyTimerKitTests.swift */; };
@@ -28,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9D2047D81AB92C61001A27E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D2047CF1AB92C61001A27E0;
+			remoteInfo = TonnyAction;
+		};
 		9D2688571AB7D76D008B88B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D127E234198B34FC00A09E62 /* Project object */;
@@ -84,6 +96,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				9DBBA2161AB7C87000F00BA7 /* TonnyTimer.appex in Embed App Extensions */,
+				9D2047DA1AB92C61001A27E0 /* TonnyAction.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +104,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D2047D01AB92C61001A27E0 /* TonnyAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TonnyAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2047D31AB92C61001A27E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2047D41AB92C61001A27E0 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		9D2047D61AB92C61001A27E0 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		9D2688451AB7D2EB008B88B9 /* TonnyTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TonnyTimer.entitlements; sourceTree = "<group>"; };
 		9D26884B1AB7D76D008B88B9 /* TonnyTimerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TonnyTimerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D26884E1AB7D76D008B88B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,6 +136,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9D2047CD1AB92C61001A27E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D2688471AB7D76D008B88B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +187,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D2047D11AB92C61001A27E0 /* TonnyAction */ = {
+			isa = PBXGroup;
+			children = (
+				9D2047D41AB92C61001A27E0 /* ActionViewController.swift */,
+				9D2047D61AB92C61001A27E0 /* MainInterface.storyboard */,
+				9D2047D21AB92C61001A27E0 /* Supporting Files */,
+			);
+			path = TonnyAction;
+			sourceTree = "<group>";
+		};
+		9D2047D21AB92C61001A27E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D2047D31AB92C61001A27E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9D26884C1AB7D76D008B88B9 /* TonnyTimerKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +277,7 @@
 				9DBBA20D1AB7C86F00F00BA7 /* TonnyTimer */,
 				9D26884C1AB7D76D008B88B9 /* TonnyTimerKit */,
 				9D26885B1AB7D76D008B88B9 /* TonnyTimerKitTests */,
+				9D2047D11AB92C61001A27E0 /* TonnyAction */,
 				9DBBA20A1AB7C86F00F00BA7 /* Frameworks */,
 				D127E23D198B34FC00A09E62 /* Products */,
 			);
@@ -248,6 +291,7 @@
 				9DBBA2091AB7C86F00F00BA7 /* TonnyTimer.appex */,
 				9D26884B1AB7D76D008B88B9 /* TonnyTimerKit.framework */,
 				9D2688551AB7D76D008B88B9 /* TonnyTimerKitTests.xctest */,
+				9D2047D01AB92C61001A27E0 /* TonnyAction.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,6 +348,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9D2047CF1AB92C61001A27E0 /* TonnyAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2047DB1AB92C61001A27E0 /* Build configuration list for PBXNativeTarget "TonnyAction" */;
+			buildPhases = (
+				9D2047CC1AB92C61001A27E0 /* Sources */,
+				9D2047CD1AB92C61001A27E0 /* Frameworks */,
+				9D2047CE1AB92C61001A27E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TonnyAction;
+			productName = TonnyAction;
+			productReference = 9D2047D01AB92C61001A27E0 /* TonnyAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9D26884A1AB7D76D008B88B9 /* TonnyTimerKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D2688641AB7D76E008B88B9 /* Build configuration list for PBXNativeTarget "TonnyTimerKit" */;
@@ -373,6 +434,7 @@
 			dependencies = (
 				9DBBA2151AB7C87000F00BA7 /* PBXTargetDependency */,
 				9D2688611AB7D76D008B88B9 /* PBXTargetDependency */,
+				9D2047D91AB92C61001A27E0 /* PBXTargetDependency */,
 			);
 			name = "SimpleTimer-Extention";
 			productName = SimpleTimer;
@@ -406,6 +468,10 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "OneV's Den";
 				TargetAttributes = {
+					9D2047CF1AB92C61001A27E0 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = PXQ7FJBX3V;
+					};
 					9D26884A1AB7D76D008B88B9 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = PXQ7FJBX3V;
@@ -456,11 +522,20 @@
 				9DBBA2081AB7C86F00F00BA7 /* TonnyTimer */,
 				9D26884A1AB7D76D008B88B9 /* TonnyTimerKit */,
 				9D2688541AB7D76D008B88B9 /* TonnyTimerKitTests */,
+				9D2047CF1AB92C61001A27E0 /* TonnyAction */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9D2047CE1AB92C61001A27E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2047D71AB92C61001A27E0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D2688491AB7D76D008B88B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -479,6 +554,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2047CB1AB92624001A27E0 /* Images.xcassets in Resources */,
 				9DBBA2131AB7C87000F00BA7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +578,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9D2047CC1AB92C61001A27E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2047D51AB92C61001A27E0 /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D2688461AB7D76D008B88B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2047CA1AB9260B001A27E0 /* Images.xcassets in Sources */,
 				9DBBA2111AB7C87000F00BA7 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +631,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9D2047D91AB92C61001A27E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D2047CF1AB92C61001A27E0 /* TonnyAction */;
+			targetProxy = 9D2047D81AB92C61001A27E0 /* PBXContainerItemProxy */;
+		};
 		9D2688581AB7D76D008B88B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D26884A1AB7D76D008B88B9 /* TonnyTimerKit */;
@@ -585,6 +675,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9D2047DC1AB92C61001A27E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TonnyAction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9D2047DD1AB92C61001A27E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = TonnyAction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9D2688651AB7D76E008B88B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -672,6 +793,8 @@
 		9DBBA2171AB7C87000F00BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TonnyTimer/TonnyTimer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -691,6 +814,8 @@
 		9DBBA2181AB7C87000F00BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TonnyTimer/TonnyTimer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -852,6 +977,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9D2047DB1AB92C61001A27E0 /* Build configuration list for PBXNativeTarget "TonnyAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2047DC1AB92C61001A27E0 /* Debug */,
+				9D2047DD1AB92C61001A27E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9D2688641AB7D76E008B88B9 /* Build configuration list for PBXNativeTarget "TonnyTimerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
