@@ -22,8 +22,11 @@ let defaultTimeInterval: NSTimeInterval = 100
 class ViewController: UIViewController {
                             
     @IBOutlet weak var lblTimer: UILabel!
-    
     var timer: Timer!
+    
+    
+    @IBOutlet weak var textView:UITextView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,6 +135,14 @@ class ViewController: UIViewController {
     func hideTonnyTimerExtention(){
         var widegCtl = NCWidgetController.widgetController() as NCWidgetController
         widegCtl.setHasContent(false,  forWidgetWithBundleIdentifier:"com.tonny.research.com.SimpleTimer.TonnyTimer")
+    }
+    
+    
+    
+    @IBAction func actionButtonPressed(){
+        var activityVC = UIActivityViewController(activityItems: [self.textView.text], applicationActivities: nil)
+        self.presentViewController(activityVC, animated: true) { () -> Void in
+        }
     }
     
 

@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleTimer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleTimer_Extention" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,6 +51,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kip-em-ZP4">
+                                <rect key="frame" x="0.0" y="333" width="600" height="137"/>
+                                <color key="backgroundColor" red="1" green="0.44147162598374634" blue="0.85827708461967023" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Tap the action button to invoke activity view controller. Then select 'Read it' action and this text will be read by our sample Action extension</string>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-T5-fmk">
+                                <rect key="frame" x="0.0" y="470" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="action" id="YAu-nM-Qo7">
+                                        <connections>
+                                            <action selector="actionButtonPressed" destination="BYZ-38-t0r" id="C8L-ae-ZFP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -86,11 +104,12 @@
                     </view>
                     <connections>
                         <outlet property="lblTimer" destination="omF-sH-Z4t" id="Ndf-2q-wrM"/>
+                        <outlet property="textView" destination="Kip-em-ZP4" id="ZZp-yp-YeU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260.625" y="170"/>
+            <point key="canvasLocation" x="260" y="170"/>
         </scene>
     </scenes>
 </document>

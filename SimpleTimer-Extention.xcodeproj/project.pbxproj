@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9D2047CA1AB9260B001A27E0 /* Images.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
-		9D2047CB1AB92624001A27E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
 		9D2047D51AB92C61001A27E0 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2047D41AB92C61001A27E0 /* ActionViewController.swift */; };
 		9D2047D71AB92C61001A27E0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2047D61AB92C61001A27E0 /* MainInterface.storyboard */; };
 		9D2047DA1AB92C61001A27E0 /* TonnyAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D2047D01AB92C61001A27E0 /* TonnyAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D2047DE1ABA7466001A27E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
+		9D2047E01ABA7B96001A27E0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D2047DF1ABA7B96001A27E0 /* AVFoundation.framework */; };
+		9D2047E21ABA7D3F001A27E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
+		9D2047E31ABA7D3F001A27E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
 		9D2688501AB7D76D008B88B9 /* TonnyTimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D26884F1AB7D76D008B88B9 /* TonnyTimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D2688561AB7D76D008B88B9 /* TonnyTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D26884B1AB7D76D008B88B9 /* TonnyTimerKit.framework */; };
 		9D26885F1AB7D76D008B88B9 /* TonnyTimerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26885E1AB7D76D008B88B9 /* TonnyTimerKitTests.swift */; };
@@ -28,7 +31,6 @@
 		D127E242198B34FC00A09E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127E241198B34FC00A09E62 /* AppDelegate.swift */; };
 		D127E244198B34FC00A09E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127E243198B34FC00A09E62 /* ViewController.swift */; };
 		D127E247198B34FC00A09E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D127E245198B34FC00A09E62 /* Main.storyboard */; };
-		D127E249198B34FC00A09E62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
 		D127E255198B34FC00A09E62 /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D127E254198B34FC00A09E62 /* SimpleTimerTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,7 @@
 		9D2047D31AB92C61001A27E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2047D41AB92C61001A27E0 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		9D2047D61AB92C61001A27E0 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		9D2047DF1ABA7B96001A27E0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9D2688451AB7D2EB008B88B9 /* TonnyTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TonnyTimer.entitlements; sourceTree = "<group>"; };
 		9D26884B1AB7D76D008B88B9 /* TonnyTimerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TonnyTimerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D26884E1AB7D76D008B88B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2047E01ABA7B96001A27E0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +247,7 @@
 		9DBBA20A1AB7C86F00F00BA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D2047DF1ABA7B96001A27E0 /* AVFoundation.framework */,
 				9D26886E1AB82BEC008B88B9 /* UIKit.framework */,
 				9D26886C1AB82BE4008B88B9 /* Foundation.framework */,
 				9DBBA20B1AB7C86F00F00BA7 /* NotificationCenter.framework */,
@@ -532,6 +537,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2047DE1ABA7466001A27E0 /* Images.xcassets in Resources */,
 				9D2047D71AB92C61001A27E0 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,8 +560,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2047CB1AB92624001A27E0 /* Images.xcassets in Resources */,
 				9DBBA2131AB7C87000F00BA7 /* MainInterface.storyboard in Resources */,
+				9D2047E21ABA7D3F001A27E0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D127E247198B34FC00A09E62 /* Main.storyboard in Resources */,
-				D127E249198B34FC00A09E62 /* Images.xcassets in Resources */,
+				9D2047E31ABA7D3F001A27E0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +684,8 @@
 		9D2047DC1AB92C61001A27E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -695,6 +703,8 @@
 		9D2047DD1AB92C61001A27E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -984,6 +994,7 @@
 				9D2047DD1AB92C61001A27E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2688641AB7D76E008B88B9 /* Build configuration list for PBXNativeTarget "TonnyTimerKit" */ = {
 			isa = XCConfigurationList;

@@ -8,52 +8,49 @@
 
 import UIKit
 import MobileCoreServices
+import AVFoundation
 
 class ActionViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var textView:UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var item = (self.extensionContext?.inputItems[0]) as NSExtensionItem
+        var attachments = item.attachments as [NSItemProvider]
+        var itemProvider =  attachments[0] as NSItemProvider
+        
+        if itemProvider.hasItemConformingToTypeIdentifier(kUTTypePlainText) {
+            weak var textView = self.textView
+            itemProvider.loadItemForTypeIdentifier(kUTTypePlainText, options: nil, completionHandler: { (item:NSSecureCoding!, error:NSError!) -> Void in
+                if item != nil {
+                    NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                        textView!.text = item as NSString
+                        println("the text is \(item)")
+                        
+                        var synthesizer = AVSpeechSynthesizer()
+                        var utterance = AVSpeechUtterance(string: textView?.text)
+                        utterance.rate = 0.1
+                        synthesizer.speakUtterance(utterance)
+                    })
+                }
+            })
+        }
     
         // Get the item[s] we're handling from the extension context.
         
         // For example, look for an image and place it into an image view.
         // Replace this with something appropriate for the type[s] your extension supports.
-        var imageFound = false
-        for item: AnyObject in self.extensionContext!.inputItems {
-            let inputItem = item as NSExtensionItem
-            for provider: AnyObject in inputItem.attachments! {
-                let itemProvider = provider as NSItemProvider
-                if itemProvider.hasItemConformingToTypeIdentifier(kUTTypeImage as NSString) {
-                    // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
-                    itemProvider.loadItemForTypeIdentifier(kUTTypeImage as NSString, options: nil, completionHandler: { (image, error) in
-                        if image != nil {
-                            NSOperationQueue.mainQueue().addOperationWithBlock {
-                                if let imageView = weakImageView {
-                                    imageView.image = image as? UIImage
-                                }
-                            }
-                        }
-                    })
-                    
-                    imageFound = true
-                    break
-                }
-            }
-            
-            if (imageFound) {
-                // We only handle one image, so stop looking for more.
-                break
-            }
         }
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
 
     @IBAction func done() {
         // Return any edited content to the host app.
