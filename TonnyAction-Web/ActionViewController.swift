@@ -73,15 +73,29 @@ class ActionViewController: UIViewController , UITableViewDataSource, UITableVie
 
     @IBAction func done() {
         // Find out which tags need marqueefying
+        
+        /**
         let marqueeTagNames = tagList.filter{ $0.status }.map{ $0.tag }
         
         // Parcel them up in an NSExtensionItem
         let extensionItem = NSExtensionItem()
         let jsDict = [ NSExtensionJavaScriptFinalizeArgumentKey : [ "marqueeTagNames" : marqueeTagNames ]]
         extensionItem.attachments = [ NSItemProvider(item: jsDict, typeIdentifier: kUTTypePropertyList as NSString)]
-        
+
         // Send them back to the javascript processor
         self.extensionContext!.completeRequestReturningItems([extensionItem], completionHandler: nil)
+        */
+        
+
+        /**
+        https://developer.apple.com/library/prerelease/ios/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW8
+        */
+        
+        let extensionItem = NSExtensionItem()
+        let jsDict = [ NSExtensionJavaScriptFinalizeArgumentKey : ["bgColor":"red"]]
+        extensionItem.attachments = [ NSItemProvider(item: jsDict, typeIdentifier: kUTTypePropertyList as NSString)]
+        self.extensionContext!.completeRequestReturningItems([extensionItem], completionHandler: nil)
+        
     }
     
     @IBAction func cancel(sender: AnyObject) {
