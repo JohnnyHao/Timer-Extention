@@ -9,12 +9,9 @@
 /* Begin PBXBuildFile section */
 		9D2047CA1AB9260B001A27E0 /* Images.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
 		9D2047CB1AB92624001A27E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D127E248198B34FC00A09E62 /* Images.xcassets */; };
-<<<<<<< HEAD
 		9D2047D51AB92C61001A27E0 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2047D41AB92C61001A27E0 /* ActionViewController.swift */; };
 		9D2047D71AB92C61001A27E0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2047D61AB92C61001A27E0 /* MainInterface.storyboard */; };
 		9D2047DA1AB92C61001A27E0 /* TonnyAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D2047D01AB92C61001A27E0 /* TonnyAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-=======
->>>>>>> 6b588b88d20253855c7ba24103a9cbea6cf48b0a
 		9D2688501AB7D76D008B88B9 /* TonnyTimerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D26884F1AB7D76D008B88B9 /* TonnyTimerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D2688561AB7D76D008B88B9 /* TonnyTimerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D26884B1AB7D76D008B88B9 /* TonnyTimerKit.framework */; };
 		9D26885F1AB7D76D008B88B9 /* TonnyTimerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D26885E1AB7D76D008B88B9 /* TonnyTimerKitTests.swift */; };
