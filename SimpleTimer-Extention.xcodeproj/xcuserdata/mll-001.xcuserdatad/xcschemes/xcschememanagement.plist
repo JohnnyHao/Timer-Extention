@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TonnyAction-Web.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>TonnyAction.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>9D2047CF1AB92C61001A27E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D2047E71ABA9771001A27E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
